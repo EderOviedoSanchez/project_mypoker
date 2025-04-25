@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Blackjack</h1>
+    
+    <div class="mesa">
+        <div class="crupier">
+            <h2>Crupier:</h2>
+            <div class="cartas" id="cartas-crupier"></div>
+            <div class="puntuacion" id="puntos-crupier"></div>
+        </div>
+        
+        <div class="jugador">
+            <h2>Tu mano:</h2>
+            <div class="cartas" id="cartas-jugador"></div>
+            <div class="puntuacion" id="puntos-jugador"></div>
+        </div>
+        
+        <div class="mensaje" id="mensaje"></div>
+        
+        <div class="controles">
+            <button id="btn-pedir">Pedir carta</button>
+            <button id="btn-plantarse">Plantarse</button>
+            <button id="btn-nuevo-juego">Nuevo juego</button>
+        </div>
+    </div>
+    
+    <div class="instrucciones">
+        <h3>Instrucciones:</h3>
+        <p>El objetivo del Blackjack es conseguir una mano que sume 21 puntos o lo más cerca posible sin pasarse.</p>
+        <ul>
+            <li>Las cartas numéricas valen su número.</li>
+            <li>Las figuras (J, Q, K) valen 10 puntos.</li>
+            <li>El As vale 11 puntos, pero si te pasas de 21, vale 1 punto.</li>
+            <li>Si obtienes 21 puntos con las dos primeras cartas, tienes Blackjack.</li>
+            <li>El crupier debe pedir carta hasta tener 17 o más puntos.</li>
+        </ul>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
